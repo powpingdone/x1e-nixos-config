@@ -12,7 +12,7 @@
     }:
     let
       # Modify this if you are building on something other than x86_64-linux.
-      buildSystem = "x86_64-linux";
+      buildSystem = "aarch64-linux";
 
       # Modify this of you want to attempt using a different device.
       # See the `arch/arm64/boot/dts/qcom` directory in the Linux

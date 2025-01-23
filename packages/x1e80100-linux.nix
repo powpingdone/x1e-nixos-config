@@ -81,5 +81,14 @@ linuxPackagesFor (buildLinux {
         hash = "sha256-Tw2mlbTR6MPvVocaLR3CtWRDqlLql4+0oEnf0DfJp5U=";
       };
     }
+
+    # temperature reading of the speakers
+    {
+      name = "ASoC: codecs: wsa883x: Implement temperature reading and hwmon";
+      patch = fetchpatch {
+        url = "https://patchwork.kernel.org/project/alsa-devel/patch/20250107114506.554589-1-alexey.klimov@linaro.org/raw";
+        hash = " sha256-jPHeXW+99Fy7PCk2YqjQvLSgRu6mCKngCkxgj3TJdGw=";
+      };
+    }
   ];
 })
